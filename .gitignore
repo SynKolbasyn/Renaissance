@@ -1,6 +1,7 @@
 .idea/
 src/__pycache__/
 tests/__pycache__/
+venv/
 players_data/
 logs/
-venv/
+game_data/

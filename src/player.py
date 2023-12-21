@@ -26,7 +26,7 @@ class Player:
                 data[i] = zero_player[i]
         return data
 
-    def save_data(self):
+    def save_data(self) -> None:
         json.dump(
             self.__dict__,
             open(f"../players_data/{self.player_id}.json", "w", encoding="utf-8"),
@@ -35,5 +35,6 @@ class Player:
         )
 
     def process_message(self, message: str) -> str:
+        
         self.save_data()
         return message

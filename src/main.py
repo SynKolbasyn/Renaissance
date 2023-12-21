@@ -11,7 +11,7 @@ dp = aiogram.Dispatcher()
 
 
 @dp.message()
-async def echo_handler(message: aiogram.types.Message) -> None:
+async def main_handler(message: aiogram.types.Message) -> None:
     answer = router.process_message(message)
     await message.reply(answer)
 
